@@ -1,0 +1,17 @@
+name = "funnel-rework"
+workers_dev = true
+compatibility_date = "2022-06-28"
+
+main = ".output/server/index.mjs"
+
+kv_namespaces = [
+  { binding="BRANDS", id="5fa1184588124875b05e66e78c678324", preview_id="5fa1184588124875b05e66e78c678324" },
+  { binding="THEMES", id="cf46624a8c2c4263b4d2589f9a0a544f", preview_id="cf46624a8c2c4263b4d2589f9a0a544f" },
+]
+
+r2_buckets = [
+  { binding="THEME", bucket_name="themes-test", preview_bucket_name="themes-test" }
+]
+
+[site]
+bucket = ".output/public"
